@@ -40,6 +40,10 @@ function JSGetSwfVer(i){
 // When called with reqMajorVer, reqMinorVer, reqRevision returns true if that version or greater is available
 function DetectFlashVer(reqMajorVer, reqMinorVer, reqRevision) 
 {
+	// 22/8/17 Dene Basford. Bypass this function
+	return true;
+	
+	
  	reqVer = parseFloat(reqMajorVer + "." + reqRevision);
    	// loop backwards through the versions until we find the newest version	
 	for (i=25;i>0;i--) {	
